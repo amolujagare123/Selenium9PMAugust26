@@ -3,6 +3,10 @@
 
 <suite name="WebsiteSuite">
 
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    </listeners>
+
     <test name="CareerAndLearningTest">
         <classes>
             <class name="TestNG.DemoReal.JobSites"/>

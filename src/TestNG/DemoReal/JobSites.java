@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -24,6 +25,8 @@ public class JobSites {
     public void naukri() {
         driver.get("https://www.naukri.com/");
         System.out.println("Title: " + driver.getTitle());
+        Assert.assertEquals(driver.getTitle() , "my naukri" ,
+                "This is not a naukri site");
     }
 
     @Test
