@@ -3,9 +3,14 @@
 
 <suite name="WebsiteSuite">
 
-    <listeners>
+<!--    <listeners>
         <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    </listeners>-->
+
+    <listeners>
+        <listener class-name="ListenersDemo.MyExtentListener"/>
     </listeners>
+
 
     <test name="CareerAndLearningTest">
         <classes>

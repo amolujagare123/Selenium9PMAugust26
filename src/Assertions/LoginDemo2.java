@@ -27,14 +27,9 @@ public class LoginDemo2 {
 
         WebElement btnLogin = driver.findElement(By.className("btn-login"));
         btnLogin.click();
-     //   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+
        Thread.sleep(4000);
 
-       /* String expected = "https://amolujagare.com/stockmaster/pages/dashboard.php";
-        String actual = driver.getCurrentUrl();*/
-
-    /*    String expected = "Dashboard — StockMaster Pro";
-        String actual = driver.getTitle();*/
 
         String expected = "Dashboard";
         String actual = "";

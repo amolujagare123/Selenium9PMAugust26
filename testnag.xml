@@ -1,5 +1,10 @@
 <suite name = "project name">
 
+    <listeners>
+        <listener class-name="ListenersDemo.MyListener"/>
+    </listeners>
+
+
     <test name="module 1">
         <classes>
             <class name = "TestNG.Demo.ClassOne"/>
