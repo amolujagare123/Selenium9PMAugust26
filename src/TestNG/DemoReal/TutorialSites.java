@@ -8,23 +8,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TutorialSites {
+public class TutorialSites extends Base {
 
-    WebDriver driver;
-
-    @BeforeClass
-    public void openBrowser() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        System.out.println("Browser opened - TutorialSites");
-    }
-
-    @Test
-    public void w3Schools() {
-        driver.get("https://www.w3schools.com/");
-        System.out.println("Title: " + driver.getTitle());
-    }
 
     @Test
     public void tutorialsPoint() {
